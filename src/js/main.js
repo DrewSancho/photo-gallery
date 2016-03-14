@@ -1,34 +1,3 @@
-// (function ($) {
-//     var images = ['src/img/angeloak.jpg', 'src/img/desert.jpeg', 'src/img/field.jpeg', 'src/img/jungle.jpeg', 'src/img/mountain.jpeg'];
-//     var container = $('#gallery');
-//     var current = container.find('.galleryCurrent');
-//     var scroll = container.find('.galleryScroll');
-
-//     function setCurrentSrc (url) {
-//         current.attr('src', url);
-//     }
-
-//     var scrollElements = images.reduce(function (prev, next) {
-//         // creates new image
-//         var image = $('<img>');
-//         // set the src attribute to the url
-//         image.attr('src', next);
-//         // add and return the updated collection in new jQuery images object
-//         return prev.add(image);
-//     }, $());
-
-//     $('.galleryScroll').on('click', function (e) {
-//         var target = $(e.target);
-//         if (target.is('img')) {
-//             current.attr('src', target.attr('src'));
-//         }
-//     });
-
-//     scroll.append(scrollElements);
-
-//     setCurrentSrc(images[0]);
-
-// })(window.jQuery);
 (function ($) {
     function photoGallery (el, array) {
         el = $(el);
